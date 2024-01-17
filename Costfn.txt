@@ -1,0 +1,5 @@
+def computeCost(X, y, theta):
+    z = np.power(((X * theta.T) - y), 2)
+#    print('z \n',z)
+#    print('m ' ,len(X))
+    return np.sum(z) / (2 * len(X))
